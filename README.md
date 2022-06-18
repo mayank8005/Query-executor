@@ -5,7 +5,7 @@ This is a dummy application to execute SQL query. It's not linked with any backe
 2. `select * from large-table`
 3. `select * from xl-table`
 
-We can also execute query using suggested query dropdown menu. 
+We can also execute query using example query dropdown menu. 
 I have also hosted this application on Azure static web app with github actions
 
 #### Page URL: https://purple-bush-0c6798d0f.1.azurestaticapps.net/
