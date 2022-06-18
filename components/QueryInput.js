@@ -3,7 +3,8 @@ import Prism from "prismjs";
 import "prismjs/components/prism-sql";
 
 import ToggleButton from "@mui/material/ToggleButton";
-import CheckIcon from "@mui/icons-material/Check";
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp';
 import Select from "@mui/material/Select";
 import MenuItem from "@mui/material/MenuItem";
 
@@ -47,7 +48,7 @@ const QueryInput = (props) => {
             selected={isExpanded}
             onChange={handleExpansionToggleClick}
           >
-            <CheckIcon className="h-4 w-4" />
+            {isExpanded ? <ArrowDropUpIcon className="h-4 w-4" /> : <ArrowDropDownIcon className="h-4 w-4" />}
           </ToggleButton>
         </div>
         {isExpanded ? (
