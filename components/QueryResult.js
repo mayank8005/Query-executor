@@ -52,6 +52,7 @@ const QueryResult = (props) => {
   return (
     <>
       <div className="mt-4 w-3/4 rounded-md bg-sky-300 border-white border-2 grow">
+        {props.queryResult && rows?.length === 0 ? "No Result found": ''}
         <AutoSizer>
           {({ height, width }) => (
             <Table
