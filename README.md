@@ -1,3 +1,5 @@
+# SQL Query Executor (Dummy Application)
+
 This is a dummy application to execute SQL query. It's not linked with any backend server or any query execution engine. As of now it can only execute 3 queries.
 1. `select * from small-table`   
 2. `select * from large-table`
