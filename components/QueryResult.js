@@ -3,14 +3,7 @@ import { AutoSizer, Column, Table } from "react-virtualized";
 import Tooltip from "@mui/material/Tooltip";
 
 const QueryResult = (props) => {
-  if (props.executingQuery) {
-    return (
-      <div className="mt-4 w-3/4 p-8 rounded-md bg-sky-300 border-white border-2">
-        Executing...
-      </div>
-    );
-  }
-
+  
   const cols = useMemo(() => {
     if (!props.queryResult || !props.queryResult.length) return [];
     return props.queryResult[0].map((header) => ({
@@ -31,6 +24,14 @@ const QueryResult = (props) => {
         )
       );
   }, [props.queryResult]);
+
+  if (props.executingQuery) {
+    return (
+      <div className="mt-4 w-3/4 p-8 rounded-md bg-sky-300 border-white border-2">
+        Executing...
+      </div>
+    );
+  }
 
   const cellRenderer = ({ cellData }) => (
     <div>
