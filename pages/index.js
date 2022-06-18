@@ -1,3 +1,4 @@
+import Prism from "prismjs";
 import Header from '../components/Header'
 import QueryInput from '../components/QueryInput'
 import QueryResult from '../components/QueryResult'
