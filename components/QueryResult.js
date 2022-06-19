@@ -35,7 +35,7 @@ const QueryResult = (props) => {
 
   const cellRenderer = ({ cellData }) => (
     <div>
-      <Tooltip title={cellData}>
+      <Tooltip title={cellData} enterTouchDelay={0}>
         <div className="text-black whitespace-nowrap overflow-hidden font-bold text-sm text-ellipsis w-11/12">
           {cellData}
         </div>
